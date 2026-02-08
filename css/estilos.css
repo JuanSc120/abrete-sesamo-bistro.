@@ -1,0 +1,227 @@
+/* --- CONFIGURACIÓN GENERAL --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4ece1; /* Fondo crema rústico */
+    color: #1a1a1a;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* --- BOTÓN HAMBURGUESA (El cuadrito) --- */
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 45px;
+    height: 45px;
+    background: #1a1a1a;
+    border: 1px solid #b5a48b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10001;
+    border-radius: 4px;
+    transition: transform 0.2s;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 2px;
+    background: #f4ece1;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+.menu-toggle:hover {
+    transform: scale(1.05);
+}
+
+/* --- MENÚ LATERAL (ESTILO OVERLAY) --- */
+.menu-lateral {
+    position: fixed;
+    left: -100%; 
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: rgba(26, 26, 26, 0.98);
+    border-right: 3px solid #b5a48b;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0;
+    z-index: 10000;
+    transition: all 0.4s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    box-shadow: 10px 0 20px rgba(0,0,0,0.5);
+}
+
+.menu-lateral.active {
+    left: 0;
+}
+
+.btn-cerrar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #f4ece1;
+    font-size: 2rem;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+.menu-lateral ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.menu-lateral ul li a {
+    color: #f4ece1;
+    text-decoration: none;
+    font-family: 'Special Elite', cursive;
+    font-size: 1.1rem;
+    padding: 15px 20px;
+    display: block;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.menu-lateral ul li a:hover {
+    color: #b5a48b;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* --- BANNER PRINCIPAL --- */
+.main-banner {
+    width: 100%;
+    height: 60vh;
+    background: url('../img/banner-nuevo.jpg') center/cover no-repeat;
+    position: relative;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(to bottom, transparent, #f4ece1);
+}
+
+/* --- CONTENIDO PRINCIPAL --- */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-intro h2 {
+    font-family: 'Special Elite', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    color: #b5a48b;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+/* --- PLATOS Y CATEGORÍAS --- */
+.titulo-categoria {
+    background: #1a1a1a;
+    color: #f4ece1;
+    font-family: 'Special Elite', cursive;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 40px 0 20px;
+    clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
+}
+
+.contenedor-platos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.plato {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed #b5a48b;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.plato-info h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.plato-info p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.precio {
+    font-family: 'Special Elite', cursive;
+    font-weight: bold;
+    color: #1a1a1a;
+    font-size: 1.2rem;
+}
+
+/* --- BANNER COMBOS --- */
+.banner-combos {
+    background: #1a1a1a;
+    color: #f4ece1;
+    padding: 20px;
+    margin: 40px 0;
+    border: 2px solid #b5a48b;
+}
+
+.borde-interior {
+    border: 1px solid #b5a48b;
+    padding: 15px;
+}
+
+/* --- BOTÓN WHATSAPP --- */
+.btn-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    z-index: 1000;
+}
+
+/* --- ANIMACIONES (Observer) --- */
+.titulo-categoria, .contenedor-platos {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.titulo-categoria.visible, .contenedor-platos.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    .menu-lateral {
+        width: 100%;
+    }
+    
+    .plato {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+}

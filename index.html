@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ábrete Sésamo | Menú Oficial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <nav class="menu-lateral" id="sidebar">
+        <div class="btn-cerrar" onclick="toggleMenu()">×</div>
+        <div class="logo-sidebar">
+            <h1 style="color: #f4ece1; font-family: 'Special Elite'; font-size: 1.2rem; text-align: center; padding: 20px 0;">ÁBRETE SÉSAMO</h1>
+        </div>
+        <ul>
+            <li><a href="#menu" onclick="toggleMenu()">Menú</a></li>
+            <li><a href="#nosotros" onclick="toggleMenu()">Sobre Nosotros</a></li>
+            <li><a href="#galeria" onclick="toggleMenu()">Galería</a></li>
+            <li><a href="#ubicacion" onclick="toggleMenu()">Horarios y Ubicación</a></li>
+        </ul>
+    </nav>
+
+    <header class="main-banner" style="position: relative;">
+    <div class="banner-overlay">
+        <p style="
+            position: absolute; 
+            top: 20px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            color: #e6b94a; 
+            font-family: 'Poppins'; 
+            font-weight: 700; 
+            z-index: 3; 
+            letter-spacing: 5px; 
+            margin: 0;
+            font-size: 1.1rem;
+            text-transform: uppercase;">
+            BISTRO
+        </p>
+
+        </div>
+</header>
+</header>
+    <main>
+        <section id="nosotros" style="padding: 80px 20px; text-align: center; background: #f4ece1;">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <h2 style="font-family: 'Special Elite'; color: #1a1a1a; margin-bottom: 30px; font-size: 2.5rem;">Nuestra Historia</h2>
+                <p style="font-family: 'Poppins'; line-height: 1.8; color: #333; margin-bottom: 20px; text-align: justify;">
+                    <strong>Ábrete Sésamo</strong> nace hace 3 años como una idea que comenzó a materializarse en el centro de Bogotá, donde se encuentra nuestra sede principal (Carrera 15 #14-12). Desde el inicio, nuestro propósito fue innovar con platos a la carta, propuestas de comida gourmet y una excelente calidad en jugos naturales.
+                </p>
+                <p style="font-family: 'Poppins'; line-height: 1.8; color: #333; text-align: justify;">
+                    Para el año 2025, decidimos expandirnos y llegamos a <strong>San Mateo, Soacha</strong>, con nuestra franquicia <strong>Ábrete Sésamo Bistro</strong>. Un restaurante acogedor que ofrece comida sencilla en un ambiente informal, enfocado en platos rápidos preparados con dedicación, sabor y calidad.
+                </p>
+            </div>
+        </section>
+
+        <section id="menu">
+            <div class="menu-intro">
+                <h2>Nuestra Carta</h2>
+                <p class="tagline">Sabor artesanal en cada bocado</p>
+            </div>
+
+            <h3 id="entradas" class="titulo-categoria">🥗 ENTRADAS</h3>
+            <div class="contenedor-platos">
+                <article class="plato"><div class="plato-info"><h3>PATACONES CON HOGAO</h3><p>Cuatro patacones con hogao de la casa.</p></div><span class="precio">$9.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>CRIOLLI-CHICHARRÓN</h3><p>Trozos de chicharrón acompañados de papa criolla y salsas de la casa.</p></div><span class="precio">$11.000</span></article>
+            </div>
+
+            <h3 id="picar" class="titulo-categoria">🌭 PARA PICAR</h3>
+            <div class="contenedor-platos">
+                <article class="plato"><div class="plato-info"><h3>SALCHIPAPA</h3><p>Papa a la francesa, queso rallado, maíz dulce, tocinito y salchicha Americana Zenú.</p></div><span class="precio">$15.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>SALCHIPAPA SESAMO</h3><p>Papa a la francesa, queso rallado, tocinito y doble porción de salchicha Americana Zenú.</p></div><span class="precio">$25.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>CHORIPAPA</h3><p>Papa a la francesa, queso rallado, tocinito y chorizo santarrosano artesanal.</p></div><span class="precio">$16.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>PERRO ESPECIAL</h3><p>Salchicha americana Zenú, pan artesanal, cebolla caramelizada, tocinito, queso, papa riplo, salsas a su gusto.</p></div><span class="precio">$16.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>NACHOS</h3><p>Nachos mexicanos, acompañados con pico de gallo, carne y pollo desmechado, guacamole y salsas de la casa.</p></div><span class="precio">$23.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>BURRITO MIXTO</h3><p>Mix de vegetales con carne y pollo envuelto en una tortilla y salsas de la casa.</p></div><span class="precio">$23.000</span></article>
+            </div>
+
+            <h3 id="pollo" class="titulo-categoria">🍗 POLLO</h3>
+            <div class="contenedor-platos">
+                <article class="plato"><div class="plato-info"><h3>PECHUGA RANCH</h3><p>Corte de 250 grs. de pechuga con tocinetas, queso, tocinetas acompañados de ensalada, papa francesa y maíz dulce.</p></div><span class="precio">$23.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>PECHUGA A LA PLANCHA</h3><p>Corte de 250 grs. de pechuga asada a la plancha acompañado de ensalada y papa francesa.</p></div><span class="precio">$21.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>PECHUGA HAWAIIANA</h3><p>Corte de 250 grs. de pechuga con tocinetas, queso y piña acompañados de ensalada y papa francesa.</p></div><span class="precio">$23.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>ALAS BBQ</h3><p>Cinco alas de pollo sazonadas en salsa BBQ, acompañadas de ensalada y papa francesa.</p></div><span class="precio">$20.000</span></article>
+            </div>
+
+            <h3 id="carnes" class="titulo-categoria">🥩 CARNES</h3>
+            <div class="contenedor-platos">
+                <article class="plato"><div class="plato-info"><h3>CHURRASCO</h3><p>Corte de 250 grs. de carne de res magra, jugosa asada a la plancha, acompañada de ensalada y papa.</p></div><span class="precio">$32.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>SOBREBARRIGA</h3><p>Corte de 250 grs. de carne de res magra, jugosa asada a la plancha, acompañada de ensalada y papa.</p></div><span class="precio">$28.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>ROLLS DE CHURRASCO</h3><p>Rolls de churrasco de 300 grs, rellenos de tocinito, queso parmesano, acompañados de ensalada y papa.</p></div><span class="precio">$32.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>BIFF CHORIZO</h3><p>Corte de 250 grs. de carne de res magra, jugosa, asada a la plancha, acompañada de ensalada y papa.</p></div><span class="precio">$31.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>COSTILLAS DE CERDO BBQ</h3><p>Corte de 300 grs. de costilla de cerdo con salsa BBQ, acompañado de ensalada y papa.</p></div><span class="precio">$28.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>LOMO DE CERDO A LA PARRILLA</h3><p>Corte de 250 grs. acompañado de ensalada y papa.</p></div><span class="precio">$25.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>LOMO DE CERDO ESPECIAL</h3><p>Corte de 250 grs. en salsa de vino y frutos rojos, relleno de tocinito y queso amarillo acompañado de ensalada y papa.</p></div><span class="precio">$28.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>PICADA</h3><p>Mix de 350 grs. de carne de res, pierna de cerdo, pechuga, chorizo sántarrosano, acompañado de papas francesas, arepa boyacense y plátano maduro.</p></div><span class="precio">$35.000</span></article>
+            </div>
+
+            <h3 id="pescados" class="titulo-categoria">🐟 PESCADOS</h3>
+            <div class="contenedor-platos">
+                <article class="plato"><div class="plato-info"><h3>MOJARRA FRITA</h3><p>Mojarra de 450 grs., acompañada de patacón, papa francesa, y ensalada.</p></div><span class="precio">$27.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>SALMÓN A LA PLANCHA</h3><p>Salmón de 250 grs a la plancha en salsa teriyaki o chimichurri, acompañada de papa y ensalada.</p></div><span class="precio">$42.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>TRUCHA MARIPOSA</h3><p>Trucha de 400 grs, acompañada de patacón, papa, arroz y ensalada.</p></div><span class="precio">$31.000</span></article>
+            </div>
+
+            <h3 id="hamburguesas" class="titulo-categoria">🍔 HAMBURGUESAS</h3>
+            <div class="contenedor-platos">
+                <article class="plato"><div class="plato-info"><h3>SENCILLA</h3><p>Hamburguesa de 100 grs. de pura carne de res, acompañada de pan artesanal, queso cheddar, lechuga, cebolla caramelizada y tomate.</p></div><span class="precio">$16.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>POLLO SESAMO</h3><p>Hamburguesa de 125 grs. de pura carne de pollo, acompañada de pan artesanal, queso doble crema, tocinitela, lechuga, cebolla caramelizada y tomate.</p></div><span class="precio">$16.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>SESAMO</h3><p>Hamburguesa doble carne de 100 grs. de pura carne de res y 120 grs de carne de pollo y chorizo santarrosano, acompañada de pan artesanal, queso cheddar y doble crema, tocinitela, lechuga, cebolla caramelizada y tomate.</p></div><span class="precio">$24.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>SESAMO MIX</h3><p>Hamburguesa doble carne de 100 grs. de pura carne de res y 100 grs. carne de cerdo, acompañada de pan artesanal queso cheddar, tocinitela, lechuga, cebolla caramelizada y tomate.</p></div><span class="precio">$22.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>ANGUS</h3><p>Hamburguesa de 150 grs. de pura carne de res angus, acompañada de pan artesanal, doble queso cheddar, tocinitela, lechuga, cebolla caramelizada y tomate.</p></div><span class="precio">$22.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>VEGETARIANA</h3><p>Hamburguesa de granos 150 grs., pan artesanal, patacón de plátano maduro, champinones, lechuga, cebolla caramelizada, tomate y papa riplo.</p></div><span class="precio">$16.000</span></article>
+            </div>
+
+            <div class="banner-combos">
+                <div class="borde-interior">
+                    <h3>¡ARMA TU COMBO! 🍟🥤</h3>
+                    <p>Pidelas en combo por solo <strong>$6.000 adicionales</strong>. Incluye bebida de 250ml y porción de papa a su gusto.</p>
+                </div>
+            </div>
+
+            <h3 id="adicionales" class="titulo-categoria">➕ PORCIONES ADICIONALES</h3>
+            <div class="contenedor-platos">
+                <article class="plato"><div class="plato-info"><h3>CARNE HAMBURGUESA</h3></div><span class="precio">$7.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>ARROZ</h3></div><span class="precio">$4.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>PAPA A LA FRANCESA</h3></div><span class="precio">$5.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>PAPA CRIOLLA</h3></div><span class="precio">$5.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>PATACONES</h3></div><span class="precio">$4.000</span></article>
+            </div>
+
+            <h3 id="bebidas" class="titulo-categoria">🥤 BEBIDAS FRÍAS</h3>
+            <div class="contenedor-platos">
+                <article class="plato"><div class="plato-info"><h3>GASEOSA 250ML</h3></div><span class="precio">$3.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>GASEOSA 400ML</h3></div><span class="precio">$4.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>CERVEZA NACIONAL</h3></div><span class="precio">$6.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>CERVEZA CORONA</h3></div><span class="precio">$7.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>CERVEZA CORONITA</h3></div><span class="precio">$5.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>COLA & POLA</h3></div><span class="precio">$5.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>STELLA ARTOIS</h3></div><span class="precio">$7.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>AGUA CON GAS</h3></div><span class="precio">$3.500</span></article>
+                <article class="plato"><div class="plato-info"><h3>AGUA SIN GAS</h3></div><span class="precio">$3.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>MICHELADA</h3></div><span class="precio">$8.000</span></article>
+                <article class="plato"><div class="plato-info"><h3>SODA CON LIMÓN Y HIELO</h3></div><span class="precio">$6.000</span></article>
+            </div>
+
+            <h3 class="titulo-categoria">🥤 JUGOS NATURALES</h3>
+            <div style="overflow-x: auto; margin-top: 20px;">
+                <table style="width: 100%; border-collapse: collapse; font-family: 'Poppins'; border: 1px solid #b5a48b; background: rgba(0,0,0,0.02);">
+                    <thead>
+                        <tr style="background: #1a1a1a; color: #f4ece1; font-family: 'Special Elite';">
+                            <th style="padding: 10px; border: 1px solid #b5a48b;">SABOR</th>
+                            <th style="padding: 10px; border: 1px solid #b5a48b;">CON AGUA</th>
+                            <th style="padding: 10px; border: 1px solid #b5a48b;">CON LECHE</th>
+                        </tr>
+                    </thead>
+                    <tbody style="text-align: center; font-size: 0.9rem;">
+                        <tr><td style="padding: 8px; border: 1px solid #b5a48b;">MORA</td><td style="border: 1px solid #b5a48b;">$6.500</td><td style="border: 1px solid #b5a48b;">$8.000</td></tr>
+                        <tr><td style="padding: 8px; border: 1px solid #b5a48b;">MANGO</td><td style="border: 1px solid #b5a48b;">$6.500</td><td style="border: 1px solid #b5a48b;">$8.000</td></tr>
+                        <tr><td style="padding: 8px; border: 1px solid #b5a48b;">MARACUYÁ</td><td style="border: 1px solid #b5a48b;">$6.500</td><td style="border: 1px solid #b5a48b;">$8.000</td></tr>
+                        <tr><td style="padding: 8px; border: 1px solid #b5a48b;">FRESA</td><td style="border: 1px solid #b5a48b;">$6.500</td><td style="border: 1px solid #b5a48b;">$8.000</td></tr>
+                        <tr><td style="padding: 8px; border: 1px solid #b5a48b;">LULO</td><td style="border: 1px solid #b5a48b;">$6.500</td><td style="border: 1px solid #b5a48b;">$8.000</td></tr>
+                        <tr><td style="padding: 8px; border: 1px solid #b5a48b;">FRUTOS AMARILLOS</td><td style="border: 1px solid #b5a48b;">$7.500</td><td style="border: 1px solid #b5a48b;">$9.000</td></tr>
+                        <tr><td style="padding: 8px; border: 1px solid #b5a48b;">FRUTOS ROJOS</td><td style="border: 1px solid #b5a48b;">$7.500</td><td style="border: 1px solid #b5a48b;">$9.000</td></tr>
+                        <tr><td style="padding: 8px; border: 1px solid #b5a48b;">MARACUMANGO</td><td style="border: 1px solid #b5a48b;">$7.500</td><td style="border: 1px solid #b5a48b;">$9.000</td></tr>
+                        <tr><td style="padding: 8px; border: 1px solid #b5a48b;">GUANÁBANA</td><td style="border: 1px solid #b5a48b;">$6.500</td><td style="border: 1px solid #b5a48b;">$8.000</td></tr>
+                        <tr><td style="padding: 8px; border: 1px solid #b5a48b;">LIMÓN COCO</td><td style="border: 1px solid #b5a48b;">$7.500</td><td style="border: 1px solid #b5a48b;">$9.000</td></tr>
+                        <tr><td style="padding: 8px; border: 1px solid #b5a48b;">LIMONADA</td><td style="border: 1px solid #b5a48b;">$7.500</td><td style="border: 1px solid #b5a48b;">$9.000</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+       <section id="galeria" style="padding: 80px 20px; background: #fff;">
+    <h2 style="font-family: 'Special Elite'; text-align: center; margin-bottom: 40px; font-size: 2.5rem;">Nuestras Especialidades</h2>
+    
+    <div class="galeria-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto;">
+        
+        <div style="text-align: center;">
+            <img src="img/burritos.jpg" alt="Burritos" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <p style="font-family: 'Poppins'; margin-top: 15px; color: #333;">
+                <strong>Burritos Bistro:</strong> Tortilla artesanal, mix de carnes y papas doraditas.
+            </p>
+        </div>
+
+        <div style="text-align: center;">
+            <img src="img/nachos.jpg" alt="Nachos" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <p style="font-family: 'Poppins'; margin-top: 15px; color: #333;">
+                <strong>Nachos Especiales:</strong> Bañados en nuestra salsa secreta con pico de gallo.
+            </p>
+        </div>
+
+        <div style="text-align: center;">
+            <img src="img/rollos.jpg" alt="Rollos" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <p style="font-family: 'Poppins'; margin-top: 15px; color: #333;">
+                <strong>Rolls de Churrasco:</strong> Finos cortes de carne rellenos de queso y tocino.
+            </p>
+        </div>
+
+        <div style="text-align: center;">
+            <img src="img/vista-cocina.jpg" alt="Cocina" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <p style="font-family: 'Poppins'; margin-top: 15px; color: #333;">
+                <strong>Calidad Superior:</strong> Preparados al momento con ingredientes frescos.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+        <section id="ubicacion" style="padding: 80px 20px; background: #1a1a1a; color: #f4ece1;">
+            <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 40px;">
+                
+                <div style="flex: 1; min-width: 300px;">
+                    <h2 style="font-family: 'Special Elite'; color: #e6b94a; margin-bottom: 30px; font-size: 2rem;">🕒 Horarios de Atención</h2>
+                    <ul style="list-style: none; font-family: 'Poppins'; padding: 0; line-height: 2;">
+                        <li><strong>Lunes a Jueves:</strong> 2:00 PM - 10:00 PM</li>
+                        <li><strong>Viernes y Sábados:</strong> 3:00 PM - 11:00 PM</li>
+                        <li><strong>Domingos:</strong> 1:00 PM - 9:00 PM</li>
+                    </ul>
+                    <p style="margin-top: 20px; font-family: 'Poppins'; color: #888; font-style: italic;">
+                        *Sujeto a cambios en días festivos.
+                    </p>
+                </div>
+
+                <div style="flex: 1; min-width: 300px;">
+                    <h2 style="font-family: 'Special Elite'; color: #e6b94a; margin-bottom: 30px; font-size: 2rem;">📍 Ubicación San Mateo</h2>
+                    <p style="font-family: 'Poppins'; margin-bottom: 10px; font-size: 1.1rem; font-weight: bold;">
+                        Calle 30 # 1-50
+                    </p>
+                    <p style="font-family: 'Poppins'; margin-bottom: 20px; color: #bbb;">
+                        Soacha, Cundinamarca (Cerca a Casalinda Parque)
+                    </p>
+                    
+                    <a href="https://www.google.com/maps/search/?api=1&query=Calle+30+%231-50+Soacha+San+Mateo" 
+                       target="_blank" 
+                       style="display: inline-block; background: #e6b94a; color: #1a1a1a; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-family: 'Poppins'; font-weight: bold; margin-bottom: 20px;">
+                       📍 CÓMO LLEGAR (GPS)
+                    </a>
+
+                    <div style="width: 100%; height: 250px; border-radius: 8px; overflow: hidden; border: 2px solid #e6b94a;">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.123456789012!2d-74.1956!3d4.5888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9876543210ab%3A0x1234567890abcdef!2sCl.%2030%20%231-50%2C%20Soacha%2C%20Cundinamarca!5e0!3m2!1ses!2sco!4v1700000000000!5m2!1ses!2sco" 
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    <footer style="background: #000; color: #888; padding: 60px 20px; text-align: center; border-top: 2px solid #1a1a1a;">
+        <h3 style="color: #f4ece1; font-family: 'Special Elite'; font-size: 1.8rem; margin-bottom: 15px;">ÁBRETE SÉSAMO</h3>
+        <p style="font-family: 'Poppins'; font-size: 0.9rem; margin-bottom: 25px; letter-spacing: 1px;">Sede Principal: Cra 15 #14-12, Bogotá | Bistro: Cr 30 #1-50, Soacha</p>
+        <div style="margin-bottom: 30px;">
+            <a href="https://www.instagram.com/abretesesamocentro" style="color: #e6b94a; margin: 0 15px; text-decoration: none; font-family: 'Poppins'; font-weight: bold;">Instagram</a>
+            
+        </div>
+        <p style="font-size: 0.75rem; opacity: 0.5;">© 2026 Ábrete Sésamo Bistro. Todos los derechos reservados.</p>
+    </footer>
+
+    <a href="https://wa.me/PON_TU_NUMERO_AQUI" class="btn-flotante" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <script src="css/main.js"></script>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.titulo-categoria, .contenedor-platos').forEach(el => {
+            observer.observe(el);
+        });
+
+        function toggleMenu() {
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
